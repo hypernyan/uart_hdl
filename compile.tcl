@@ -12,7 +12,7 @@ set library_file_list {
 
 		}
 		test_library {
-			uart.sv
+			uart.v
 			uart_rx.v
 			uart_tx.v
 			uart_tb.sv
