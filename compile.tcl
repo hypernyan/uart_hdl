@@ -15,7 +15,7 @@ set library_file_list {
 			uart.v
 			uart_rx.v
 			uart_tx.v
-			uart_tb.v
+			uart_tb.sv
 		}
 }
 
