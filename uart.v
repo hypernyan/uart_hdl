@@ -11,7 +11,8 @@ module uart #
     parameter LATCH_TOLERANCE = 1
 )
 (
-    input  wire       clk,
+    input  wire       clk_rx,
+    input  wire       clk_tx,
     input  wire       rst,
 
 	input  wire       rx,
@@ -38,7 +39,7 @@ uart_rx #(
 	.PRESCALER       ( PRESCALER   ),
 	.LATCH_TOLERANCE ( LATCH_TOLERANCE ) )
 uart_rx_inst (
-	.clk      ( clk ),
+	.clk      ( clk_rx ),
 	.rst      ( rst ),
 	.rx       ( rx  ),
 	.rxd      ( rxd ),
@@ -52,7 +53,7 @@ uart_tx #(
 	.EVEN       ( EVEN        ),
 	.PRESCALER  ( PRESCALER   ) )
 uart_tx_inst (
-	.clk      ( clk ),
+	.clk      ( clk_tx ),
 	.rst      ( rst ),
 	.tx       ( tx  ),
 	.txd      ( txd ),

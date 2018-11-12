@@ -5,7 +5,8 @@ quietly WaveActivateNextPane {} 0
 add wave -noupdate -divider -height 40 {TESTBENCH INTERFACE}
 
 if [regexp {uart_tb/rst} [find signals uart_tb/rst]]                     {add wave -noupdate -format Logic -radix hexadecimal uart_tb/rst}
-if [regexp {uart_tb/clk} [find signals uart_tb/clk]]                     {add wave -noupdate -format Logic -radix hexadecimal uart_tb/clk}
+if [regexp {uart_tb/clk_rx} [find signals uart_tb/clk_rx]]                     {add wave -noupdate -format Logic -radix hexadecimal uart_tb/clk_rx}
+if [regexp {uart_tb/clk_tx} [find signals uart_tb/clk_tx]]                     {add wave -noupdate -format Logic -radix hexadecimal uart_tb/clk_tx}
 
 add wave -noupdate -divider -height 40 {TX INTERFACE}
 

@@ -95,7 +95,7 @@ eval vsim -novopt  $top_level
 do $dut_wave_do
 
 # Run the simulation
-run 8000000
+run 800000000
 
 # If waves are required
 

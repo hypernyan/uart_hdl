@@ -12,7 +12,7 @@ module uart_tx #
     input wire                clk,
     input wire                rst,
 	output reg                tx,
-	input wire [DATA_WIDTH:0] txd,
+	input wire [DATA_WIDTH-1:0] txd,
 	input wire                txv,
 	output reg                active
 );
